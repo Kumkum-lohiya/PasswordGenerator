@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassWord Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+     <div id="main">
+        <div id="heading">
+        <h3>PASSWORD GENERATOR</h3>
+        <p>Create strong and secure passwords to keep your account safe online</p> 
+        </div>
+        
+        <div class="firstDiv">
+        <h1 id="newPass"></h1>
+        <i class="fa-regular fa-copy" id="copybtn"></i>
+    </div>
+    <div class="secondDiv">
+       <input type="range" id="range" min="6" max="20" value="10" >
+       <div class="pass">
+        <p>Password Length :</p>
+        <p id="rangeVal"></p>
+       </div>
+    </div>
+      
+       
+        <div class="ThirdDiv">
+            <input type="checkbox" name="capLet" id="capLet" class="checkBox">
+            <label for="capLet">UpperCase</label>
+            <br>
+            <input type="checkbox" name="samLet" id="samLet" class="checkBox">
+            <label for="samLet">LowerCase</label>
+            <br>
+            <input type="checkbox" name="number" id="number" class="checkBox">
+            <label for="number">Number</label>
+            <br>
+            <input type="checkbox" name="symbol" id="symbol" class="checkBox">
+            <label for="symbol">Symbol</label>
+            
+        </div>
+        
+        <button id="genPass" >Generate PassWord</button>
+     </div>
+     
+      
+
+    <script src="./index.js"></script>
+</body>
+</html>

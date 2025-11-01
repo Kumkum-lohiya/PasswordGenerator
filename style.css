@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #309794;
+}
+#main{
+    background-color:#ffffff;
+    width: 40%;
+    height: 70%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #309794;
+    border-radius: 10px;
+    box-shadow: rgba(74, 70, 70, 0.912) 0px 0px 20px 13px; 
+}
+.firstDiv{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+#newPass{
+    width: 300px;
+    height: 30px;
+    border: 1px solid black ;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+#copybtn{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50px;
+    height:30px ;
+    align-content: center;
+    background-color:#309794;;
+}
+.pass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#genPass{
+    background-color: #309794;
+    width:200px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ------------------- */
+/* 🔹 RESPONSIVENESS 🔹 */
+/* ------------------- */
+
+/* For tablets (width ≤ 1024px) */
+@media screen and (max-width: 1024px) {
+    #main {
+        width: 60%;
+        height: 70%;
+        gap: 25px;
+    }
+
+    #newPass {
+        width: 250px;
+        font-size: 18px;
+    }
+
+    #genPass {
+        width: 180px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    #copybtn {
+        width: 45px;
+        height: 28px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile screens (width ≤ 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #3db5aa; /* slightly lighter shade */
+    }
+
+    #main {
+        width: 80%;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .firstDiv {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #newPass {
+        width: 220px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    #genPass {
+        width: 160px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    #copybtn {
+        width: 45px;
+        height: 28px;
+    }
+}
+
+/* For very small devices (width ≤ 480px) */
+@media screen and (max-width: 480px) {
+    #main {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px 4px;
+    }
+
+    #newPass {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #genPass {
+        width: 140px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    #copybtn {
+        width: 40px;
+        height: 25px;
+    }
+
+    label, p {
+        font-size: 14px;
+    }
+}
